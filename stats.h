@@ -15,6 +15,7 @@
 *  these prototypes of functions to analyze an array of unsigned char data items and report analytics
 *  on the maximum, minimum, mean, and median of the data set.
 *  In addition to reorder this data set in descending order.
+*  Then print statistics and data set to the screen.
 *
 * @author Ahmed Tiba
 * @date   24-1-2022 
@@ -61,15 +62,16 @@ void print_array(unsigned char* arr, unsigned int len);
  *
  *  This function takes as an input a pointer to 8-bit unsigned char and unsinged 32-bit intger.
  *  This will evaluate the value of the median directly if the array length is odd. or calculate
- *  the average of the both medians if the array length is even.
+ *  the average of the both medians if the array length is even.The median is rounded
+ *  to the nearest integer if needed then return an unsigned 32-bit integer value.
  *  
  * @param arr The pointer to 8-bit unsigned char points to first element in array
  * @param len Array length unsinged 32-bit integer
  *
- * @return void
+ * @return the mean unsigned 32-bit integer value 
  */
 
-unsigned char find_median(unsigned char* arr, unsigned int len);
+unsigned int find_median(unsigned char* arr, unsigned int len);
 
 
 /**
@@ -77,15 +79,16 @@ unsigned char find_median(unsigned char* arr, unsigned int len);
  *
  *  This function takes as an input a pointer to 8-bit unsigned char and unsinged 32-bit integer.
  *  This will evaluate the value of the average of the array by looping through the array. Calculate
- *  the sum of all elements then divide it by the array length. 
+ *  the sum of all elements then divide it by the array length. The mean is rounded
+ *  to the nearest integer then return an unsigned 32-bit integer value.
  *  
  * @param arr The pointer to 8-bit unsigned char points to first element in array
  * @param len Array length unsinged 32-bit integer
  *
- * @return void
+ * @return the mean unsigned 32-bit integer value 
  */
 
-float find_mean(unsigned char* arr, unsigned int len);
+unsigned int find_mean(unsigned char* arr, unsigned int len);
 
 
 /**
@@ -98,7 +101,7 @@ float find_mean(unsigned char* arr, unsigned int len);
  * @param arr The pointer to 8-bit unsigned char points to first element in array
  * @param len Array length unsinged 32-bit integer
  *
- * @return void
+ * @return the maximum unsigned 8-bit char value 
  */
 
 unsigned char find_maximum(unsigned char* arr, unsigned int len);
@@ -114,7 +117,7 @@ unsigned char find_maximum(unsigned char* arr, unsigned int len);
  * @param arr The pointer to 8-bit unsigned char points to first element in array
  * @param len Array length unsinged 32-bit integer
  *
- * @return void
+ * @return the minimum unsigned 8-bit char value 
  */
 
 unsigned char find_minimum(unsigned char* arr, unsigned int len);
