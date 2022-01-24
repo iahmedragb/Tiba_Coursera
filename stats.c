@@ -9,13 +9,17 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief Analyze statistics of an array and reorder it in a descending order.
+ *	  Then print the array before and after analysis.
  *
- * <Add Extended Description Here>
+ *  these functions analyze an array of unsigned char data items and report analytics
+ *  on the maximum, minimum, mean, and median of the data set.
+ *  In addition to reorder this data set in descending order.
+ *  Then print the statistics and the data set to the screen.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Ahmed Tiba
+ * @date 24-1-2022
  *
  */
 
@@ -35,9 +39,21 @@ void main() {
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
-
 }
 
-/* Add other Implementation File Code Here */
+
+void print_statistics(unsigned char* arr, unsigned int len){}
+
+void print_array(unsigned char* arr, unsigned int len){}
+
+unsigned char find_median(unsigned char* arr, unsigned int len){}
+
+float find_mean(unsigned char* arr, unsigned int len){}
+
+unsigned char find_maximum(unsigned char* arr, unsigned int len){}
+
+unsigned char find_minimum(unsigned char* arr, unsigned int len){}
+
+
+void sort_array(unsigned char* arr, unsigned int len){}
+
